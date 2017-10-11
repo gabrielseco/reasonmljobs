@@ -1,0 +1,20 @@
+db:
+  image: mysql:latest
+  container_name: mysql-django
+  volumes:
+    - /var/lib/mysql
+  ports:
+    - "4407:3306"
+  env_file: .env-mysql
+
+web:
+  image: reasonmljobs:1.0
+  container_name: django
+  command: ./run-production.sh
+  volumes:
+    - .:/code
+  ports:
+    - "8000:80"
+  links:
+    - db:mysql
+  env_file: .env
