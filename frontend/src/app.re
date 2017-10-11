@@ -10,7 +10,7 @@ let make ::message _children => {
     <div className="wrapper">
       <Header title="REASONML"/>
       <main>
-        (ReasonReact.stringToElement "hola contenido")
+        (ReasonReact.stringToElement "hola mundo cruel")
       </main>
       <Footer/>
     </div>
