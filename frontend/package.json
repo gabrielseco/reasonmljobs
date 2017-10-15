@@ -12,7 +12,7 @@
     "start": "react-scripts start",
     "start:django": "./scripts/run-django.sh 4000",
     "build": "react-scripts build",
-		"postbuild": "./scripts/build",
+		"postbuild": "./scripts/build.sh",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "prepare": "npm link bs-platform"
