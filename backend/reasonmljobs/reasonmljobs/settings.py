@@ -27,12 +27,14 @@ SECRET_KEY = 'bt4nnnhtp00q4n+g3ym!!5zxipp2j2ak4p(6^0$%#3051f@*b$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+IP_ADDRESS_DIGITAL_OCEAN = os.environ.get('DIGITAL_OCEAN_IP')
+
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '192.168.1.34',
     '0.0.0.0',
-    '138.197.78.164'
+    IP_ADDRESS_DIGITAL_OCEAN
 ]
 
 
