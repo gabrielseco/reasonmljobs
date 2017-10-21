@@ -1,0 +1,55 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DEV REASONMLJOBS",
+		"_postman_id": "0efcb2f7-12d1-b104-c6cf-039c1a11c440",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Companies List",
+			"request": {
+				"url": "localhost:8000/api/1.0/companies",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get companies "
+			},
+			"response": []
+		},
+		{
+			"name": "Login / Token",
+			"request": {
+				"url": "localhost:8000/api/1.0/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "gabriel",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "rogaldorn",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Login post to get token"
+			},
+			"response": []
+		}
+	]
+}
