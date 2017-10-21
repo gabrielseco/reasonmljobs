@@ -10,12 +10,12 @@
 		{
 			"name": "Companies List",
 			"request": {
-				"url": "localhost:8000/api/1.0/companies",
+				"url": "{{APIV1}}/companies",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{auth}}",
+						"value": "{{AUTH}}",
 						"description": ""
 					}
 				],
@@ -27,7 +27,7 @@
 		{
 			"name": "Login / Token",
 			"request": {
-				"url": "localhost:8000/api/1.0/login",
+				"url": "{{APIV1}}/login",
 				"method": "POST",
 				"header": [],
 				"body": {
